@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #292947;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.scrollbar::-webkit-scrollbar {
+  height: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #efefef;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 100vh;
+}
