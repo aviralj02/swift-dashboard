@@ -54,8 +54,10 @@ const Dashboard = () => {
 
     const querySortColumn = queryParams.get("sortColumn");
     const querySortOrder = queryParams.get("sortOrder");
-    if (querySortColumn && querySortOrder) {
+    if (querySortColumn) {
       setSortColumn(querySortColumn as SortColumn);
+    }
+    if (querySortOrder) {
       setSortOrder(querySortOrder as SortOrder);
     }
   }, []);
@@ -85,7 +87,7 @@ const Dashboard = () => {
     if (sortColumn) {
       handleSort();
     }
-  }, [sortColumn, sortOrder, currentComments]);
+  }, [sortColumn, sortOrder, filteredComments]);
 
   useEffect(() => {
     paginateData();

@@ -81,15 +81,9 @@ const Pagination = ({
         onChange={handleItemsPerPage}
         className="outline-none bg-white text-primary flex px-2 py-1 gap-2 items-center rounded-md border hover:shadow-md transition-all"
       >
-        <option value={10}>
-          10 /Page <ChevronDown className="w-4 h-auto" />
-        </option>
-        <option value={50}>
-          50 /Page <ChevronDown className="w-4 h-auto" />
-        </option>
-        <option value={100}>
-          100 /Page <ChevronDown className="w-4 h-auto" />
-        </option>
+        <option value={10}>10 /Page</option>
+        <option value={50}>50 /Page</option>
+        <option value={100}>100 /Page</option>
       </select>
     </div>
   );
